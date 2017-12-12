@@ -1,0 +1,32 @@
+{
+  "name": "add-image-border",
+  "version": "0.0.1",
+  "description": "Add border to image",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": "beatfreaker/add-image-border",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "keywords": [
+    "image",
+    "border",
+    "canvas"
+  ],
+  "author": {
+    "name": "beatfreaker",
+    "email": "radiachints1512@gmail.com",
+    "url": "beatfreaker.github.io"
+  },
+  "dependencies": {
+    "canvas": "^1.6.7",
+    "image-size": "^0.6.1",
+    "object-assign": "^4.1.1",
+    "random-int": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "path-exists": "^3.0.0",
+    "xo": "^0.18.2"
+  }
+}
