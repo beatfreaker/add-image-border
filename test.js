@@ -4,7 +4,7 @@ import test from 'ava';
 import fn from './';
 
 test(t => {
-	fn(['./resources/image.jpg'], {destinationPath: './resources'});
+	fn(['./resources/image.png'], {destinationPath: './resources'});
 	let items = fs.readdirSync('./resources');
 	items = items.filter(item => {
 		const isGenerated = item.indexOf('withborder') > 0;

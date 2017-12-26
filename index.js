@@ -11,7 +11,6 @@ const paintCanvasBG = (ctx, opts) => {
 };
 
 const drawImage = (image, ctx, opts) => {
-	console.log(opts.canvasW - opts.bordersize, opts.canvasH - opts.bordersize);
 	ctx.drawImage(image, opts.bordersize, opts.bordersize, opts.canvasW - (opts.bordersize * 2), opts.canvasH - (opts.bordersize * 2));
 };
 
@@ -37,7 +36,6 @@ const addBorder = (image, opts) => {
 	img.src = imgData;
 	opts.canvasW = imgDimensions.width;
 	opts.canvasH = imgDimensions.height;
-	
 	const canvas = new Canvas(opts.canvasW, opts.canvasH);
 	const ctx = canvas.getContext('2d');
 	paintCanvasBG(ctx, opts);
